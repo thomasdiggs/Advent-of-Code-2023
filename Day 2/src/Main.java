@@ -13,7 +13,7 @@ public class Main {
 
         ArrayList<String> output = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\tdiggs\\OneDrive - eogresources.com\\Desktop\\Advent of Code\\Day 2\\input.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("./Day 2/input.txt"))) {
 
             String item;
 

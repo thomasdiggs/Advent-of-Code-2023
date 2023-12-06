@@ -49,7 +49,7 @@ public class Main {
         ArrayList<String> items = new ArrayList<>();
 
         // CSV Reader
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\pathtoinputfile.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("./Day 1/input.txt"))) {
 
             String item;
             while ((item = br.readLine()) != null) {
