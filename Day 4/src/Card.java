@@ -6,6 +6,8 @@ public class Card {
     public int[] wins;
     public int[] draws;
     public int score;
+    public int count;
+    public int copies = 1;
 
     public Card(int id, int[] wins, int[] draws) {
         this.id = id;
@@ -22,6 +24,7 @@ public class Card {
                 }
             }
         }
+        this.count = count;
         this.score = 0;
         for (int i = 1; i <= count; i++) {
             if (i == 1) {

@@ -1,7 +1,21 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class Main {
+
+    public static int countCopies(ArrayList<Card> cards) {
+        int totalCopies = 0;
+        for (Card card : cards) {
+            for (int i = 1; i <= card.copies; i++) {
+                for (int j = 1; j <= card.count; j++) {
+                    if (cards.contains(cards.get(cards.indexOf(card) + j))) {
+                        cards.get(cards.indexOf(card) + j).copies += 1;
+                    }
+                }
+            }
+            totalCopies += card.copies;
+        }
+        return totalCopies;
+    }
 
     public static void main(String[] args) {
 
@@ -24,7 +38,11 @@ public class Main {
         for (Card card : cards) {
             totalScore += card.calcScore();
         }
-        System.out.println(totalScore);
+        System.out.println("Total score: " + totalScore);
+
+        int totalCopies = countCopies(cards);
+
+        System.out.println("Total copies: " + totalCopies);
 
     }
 

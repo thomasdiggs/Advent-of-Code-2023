@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="074bec2a-543d-4f95-9f41-b1963b20463c" name="Changes" comment="Day 4 Part One completed">
+    <list default="true" id="074bec2a-543d-4f95-9f41-b1963b20463c" name="Changes" comment="Added README.md">
+      <change afterPath="$PROJECT_DIR$/Day 5/Day 5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 5/src/CSVUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 5/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 6/Day 6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 6/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 7/Day 7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 7/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 8/Day 8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 8/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 4/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 4/src/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 4/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +61,9 @@
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/tdiggs/IdeaProjects/Advent of Code 2023",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
@@ -58,6 +74,9 @@
       <recent name="C:\Users\tdiggs\IdeaProjects\Advent of Code 2023\Day 1" />
       <recent name="C:\Users\tdiggs\IdeaProjects\Advent of Code 2023\Day 3\AdventofCode2023Day3" />
       <recent name="C:\Users\tdiggs\IdeaProjects\Advent of Code 2023\Day 3\AdventofCode2023Day3\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -124,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702052584902</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added README.md">
+      <option name="closed" value="true" />
+      <created>1702054048560</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702054048560</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added README.md">
+      <option name="closed" value="true" />
+      <created>1702054322742</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702054322742</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +184,7 @@
     <MESSAGE value="Restructured project files and directories" />
     <MESSAGE value="Day 3 Part One completed" />
     <MESSAGE value="Day 4 Part One completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 4 Part One completed" />
+    <MESSAGE value="Added README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added README.md" />
   </component>
 </project>
