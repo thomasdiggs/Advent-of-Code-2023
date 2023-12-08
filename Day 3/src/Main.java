@@ -45,11 +45,6 @@ public class Main {
 
         List<String> lines = reader(filePath);
 
-//        System.out.println();
-//        for (String line : lines) {
-//            System.out.println(line);
-//        }
-
         char[] symbols = {'*', '/', '@', '&', '+', '=', '#', '%', '-', '$'};
 
         int sum = 0;
@@ -63,11 +58,6 @@ public class Main {
                 String number = matcher.group();
                 int start = matcher.start();
                 int end = matcher.end();
-
-//                System.out.println("\nNumber: " + number);
-//                System.out.println("Start Index: " + start);
-//                System.out.println("End Index: " + end);
-//                System.out.println("Located on line: " + i + " of " + (lines.size() - 1));
 
                 char[] thisRow = lines.get(i).toCharArray();
 
@@ -94,7 +84,6 @@ public class Main {
                 // CHECK THE ROW ABOVE
                 // If row exists above current row
                 if (i != 0) {
-//                    System.out.println("Line above exists");
                     char[] rowAbove = lines.get(i - 1).toCharArray();
                     // Check if number is the middle
                         // If start != 0 && end != lines.get(i - 1).length()
@@ -136,14 +125,11 @@ public class Main {
                             }
                         }
                     }
-                } else {
-//                    System.out.println("Line above does not exist");
                 }
 
                 // CHECK THE ROW BELOW
                 // If row exists below current row
                 if (i != (lines.size() - 1)) {
-//                    System.out.println("Line below exists");
                     char[] rowBelow = lines.get(i + 1).toCharArray();
                     // Check if number is the middle
                     // If start != 0 && end != lines.get(i - 1).length()
@@ -185,16 +171,12 @@ public class Main {
                             }
                         }
                     }
-                } else {
-//                    System.out.println("Line below does not exist");
                 }
 
                 // If no symbols are found in the checks above, add number to sum.
                 if (containsSymbol) {
                     sum += Integer.parseInt(number);
                 }
-
-//                System.out.println("Contains symbol is " + containsSymbol);
 
             }
         }
