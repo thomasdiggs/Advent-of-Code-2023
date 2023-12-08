@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="074bec2a-543d-4f95-9f41-b1963b20463c" name="Changes" comment="Day 3 Part One completed">
-      <change afterPath="$PROJECT_DIR$/Day 4/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 4/sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 4/src/CSVUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 4/src/Card.java" afterDir="false" />
+    <list default="true" id="074bec2a-543d-4f95-9f41-b1963b20463c" name="Changes" comment="Day 4 Part One completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 3/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 4/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +48,7 @@
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/tdiggs/IdeaProjects/Advent of Code 2023",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -122,8 +116,27 @@
       <option name="project" value="LOCAL" />
       <updated>1701970022350</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Day 4 Part One completed">
+      <option name="closed" value="true" />
+      <created>1702052584902</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702052584902</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -135,6 +148,7 @@
     <MESSAGE value="Day 2 did not push for some reason" />
     <MESSAGE value="Restructured project files and directories" />
     <MESSAGE value="Day 3 Part One completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 3 Part One completed" />
+    <MESSAGE value="Day 4 Part One completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 4 Part One completed" />
   </component>
 </project>
