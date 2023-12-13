@@ -183,6 +183,9 @@ public class Main {
 
         System.out.println("\nSum: " + sum);
 
+        // Part two: look for a gear, then look for numbers around it...
+        char[] gear = {'*'};
+
     }
 
 }

@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="074bec2a-543d-4f95-9f41-b1963b20463c" name="Changes" comment="Added README.md">
-      <change afterPath="$PROJECT_DIR$/Day 5/Day 5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 5/src/CSVUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 5/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 6/Day 6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 6/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 7/Day 7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 7/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 8/Day 8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 8/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="074bec2a-543d-4f95-9f41-b1963b20463c" name="Changes" comment="Day 4 Part 2 complete">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 5/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 5/sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 5/src/Seed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 4/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 4/src/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 5/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 5/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Day 3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day 3/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +48,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
@@ -159,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702054322742</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Day 4 Part 2 complete">
+      <option name="closed" value="true" />
+      <created>1702057917176</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702057917176</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Day 4 Part 2 complete">
+      <option name="closed" value="true" />
+      <created>1702057947267</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702057947267</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +196,18 @@
     <MESSAGE value="Day 3 Part One completed" />
     <MESSAGE value="Day 4 Part One completed" />
     <MESSAGE value="Added README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added README.md" />
+    <MESSAGE value="Day 4 Part 2 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 4 Part 2 complete" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Day 5/src/Main.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
