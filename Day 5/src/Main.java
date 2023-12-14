@@ -3,25 +3,44 @@ import java.util.HashMap;
 
 public class Main {
 
-    public static HashMap<Long, Long> mapEachLine(String[] input) {
-        HashMap<Long, Long> map = new HashMap<>();
-        long destination = Long.parseLong(input[0]);
-        long source = Long.parseLong(input[1]);
-        long range = Long.parseLong(input[2]);
-        for (int i = 0; i < range; i++) {
-            map.put(source + i, destination + i);
-        }
-        return map;
-    }
+//    public static HashMap<Long, Long> mapEachLine(String[] input) {
+//        HashMap<Long, Long> map = new HashMap<>();
+//        long destination = Long.parseLong(input[0]);
+//        long source = Long.parseLong(input[1]);
+//        long range = Long.parseLong(input[2]);
+//        for (int i = 0; i < range; i++) {
+//            map.put(source + i, destination + i);
+//        }
+//        return map;
+//    }
 
     public static void findMapping(ArrayList<Seed> seeds, String[] input, String setMethod, String getMethodSource, String getMethodDestination) {
         for (String line : input) {
-            HashMap<Long, Long> map = mapEachLine(line.split(" "));
-            for (Seed seed : seeds) {
-                if (map.containsKey(seed.callGetMethod(getMethodSource))) {
-                    seed.callSetMethod(setMethod, map.get(seed.callGetMethod(getMethodSource)));
+
+            //// TESTING
+//            HashMap<Long, Long> map = new HashMap<>();
+            long destination = Long.parseLong(line.split(" ")[0]);
+            long source = Long.parseLong(line.split(" ")[1]);
+            long range = Long.parseLong(line.split(" ")[2]);
+            for (int i = 0; i < range; i++) {
+//                map.put(source + i, destination + i);
+                for (Seed seed : seeds) {
+                    boolean isSet = false;
+                    if (seed.callGetMethod(getMethodSource) == source + i && !isSet) {
+                        seed.callSetMethod(setMethod, destination + i);
+                        isSet = true;
+                    }
                 }
             }
+            ////TESTING
+
+//            HashMap<Long, Long> map = mapEachLine(line.split(" "));
+//            for (Seed seed : seeds) {
+//                if (map.containsKey(seed.callGetMethod(getMethodSource))) {
+//                    seed.callSetMethod(setMethod, map.get(seed.callGetMethod(getMethodSource)));
+//                }
+//            }
+
         }
         for (Seed seed : seeds) {
             if (seed.callGetMethod(getMethodDestination) == 0) {
@@ -32,7 +51,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String filePath = "./Day 5/sample.txt";
+        String filePath = "./Day 5/input.txt";
         ArrayList<String> lines = CSVUtility.reader(filePath);
 
         ArrayList<Seed> seeds = new ArrayList<>();
@@ -100,12 +119,19 @@ public class Main {
             }
         }
 
+        System.out.println("running seed-to-soil map");
         findMapping(seeds, seedToSoilMapInput.toArray(new String[0]), "setSoil", "getSeed", "getSoil");
+        System.out.println("running soil-to-fertilizer map");
         findMapping(seeds, soilToFertilizerMapInput.toArray(new String[0]), "setFertilizer", "getSoil", "getFertilizer");
+        System.out.println("running fertilizer-to-water map");
         findMapping(seeds, fertilizerToWaterMapInput.toArray(new String[0]), "setWater", "getFertilizer", "getWater");
+        System.out.println("running water-to-light map");
         findMapping(seeds, waterToLightMapInput.toArray(new String[0]), "setLight", "getWater", "getLight");
+        System.out.println("running light-to-temperature map");
         findMapping(seeds, lightToTemperatureMapInput.toArray(new String[0]), "setTemperature", "getLight", "getTemperature");
+        System.out.println("running temperature-to-humidity map");
         findMapping(seeds, temperatureToHumidityMapInput.toArray(new String[0]), "setHumidity", "getTemperature", "getHumidity");
+        System.out.println("running humidity-to-location map");
         findMapping(seeds, humidityToLocationMapInput.toArray(new String[0]), "setLocation", "getHumidity", "getLocation");
 
         for (Seed seed : seeds) {
