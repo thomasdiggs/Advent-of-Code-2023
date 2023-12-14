@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="074bec2a-543d-4f95-9f41-b1963b20463c" name="Changes" comment="Day 5 Part 1, making progress">
+    <list default="true" id="074bec2a-543d-4f95-9f41-b1963b20463c" name="Changes" comment="Day 5 Part 1, final code for sample input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day 5/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 5/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 5/src/Seed.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day 5/src/Seed.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702510707075</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Day 5 Part 1, final code for sample input">
+      <option name="closed" value="true" />
+      <created>1702596165259</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702596165259</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +209,7 @@
     <MESSAGE value="Added README.md" />
     <MESSAGE value="Day 4 Part 2 complete" />
     <MESSAGE value="Day 5 Part 1, making progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 5 Part 1, making progress" />
+    <MESSAGE value="Day 5 Part 1, final code for sample input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 5 Part 1, final code for sample input" />
   </component>
 </project>
