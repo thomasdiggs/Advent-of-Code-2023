@@ -1,13 +1,13 @@
 public class Seed {
 
     long seed;
-    long soil;
-    long fertilizer;
-    long water;
-    long light;
-    long temperature;
-    long humidity;
-    long location;
+    long soil = 0;
+    long fertilizer = 0;
+    long water = 0;
+    long light = 0;
+    long temperature = 0;
+    long humidity = 0;
+    long location = 0;
 
     public Seed(long seed) {
         this.seed = seed;
@@ -76,4 +76,30 @@ public class Seed {
         return "Seed: " + this.seed + ", Soil: " + this.soil + ", Fertilizer: " + this.fertilizer + ", Water: " + this.water + ", Light: " + this.light + ", Temperature: " + this.temperature + ", Humidity: " + this.humidity + ", Location: " + this.location;
     }
 
+    public void callSetMethod(String setMethod, long value) {
+        switch (setMethod) {
+            case "setSoil" -> this.setSoil(value);
+            case "setFertilizer" -> this.setFertilizer(value);
+            case "setWater" -> this.setWater(value);
+            case "setLight" -> this.setLight(value);
+            case "setTemperature" -> this.setTemperature(value);
+            case "setHumidity" -> this.setHumidity(value);
+            case "setLocation" -> this.setLocation(value);
+            default -> System.out.println("Invalid set method");
+        };
+    }
+
+    public Long callGetMethod(String getMethod) {
+        return switch (getMethod) {
+            case "getSeed" -> this.getSeed();
+            case "getSoil" -> this.getSoil();
+            case "getFertilizer" -> this.getFertilizer();
+            case "getWater" -> this.getWater();
+            case "getLight" -> this.getLight();
+            case "getTemperature" -> this.getTemperature();
+            case "getHumidity" -> this.getHumidity();
+            case "getLocation" -> this.getLocation();
+            default -> null;
+        };
+    }
 }
