@@ -8,9 +8,11 @@ public class Seed {
     long temperature = 0;
     long humidity = 0;
     long location = 0;
+    long range = 0;
 
-    public Seed(long seed) {
+    public Seed(long seed, long range) {
         this.seed = seed;
+        this.range = range;
     }
 
     public void setSoil(long soil) {
@@ -41,6 +43,8 @@ public class Seed {
         this.location = location;
     }
 
+    public void setRange(long range) { this.range = range; }
+
     public long getSeed() {
         return this.seed;
     }
@@ -70,6 +74,8 @@ public class Seed {
     }
 
     public long getLocation() { return this.location; }
+
+    public long getRange() { return this.range; }
 
     @Override
     public String toString() {

@@ -20,9 +20,24 @@ public class Main {
         }
     }
 
+    //// TESTING
+    public static long findMapping2(long inputSource, String[] input) {
+        long outputDestination = inputSource;
+        for (String line : input) {
+            long destination = Long.parseLong(line.split(" ")[0]);
+            long source = Long.parseLong(line.split(" ")[1]);
+            long range = Long.parseLong(line.split(" ")[2]);
+            if (inputSource >= source && inputSource < source + range) {
+                outputDestination = destination + (inputSource - source);
+            }
+        }
+        return outputDestination;
+    }
+    //// TESTING
+
     public static void main(String[] args) {
 
-        String filePath = "./Day 5/input.txt";
+        String filePath = "./Day 5/sample.txt";
         ArrayList<String> lines = CSVUtility.reader(filePath);
 
         ArrayList<Seed> seeds = new ArrayList<>();
@@ -36,7 +51,7 @@ public class Main {
 
         String seedsInput = lines.getFirst().replaceAll("seeds: ", "");
         for (String seed : seedsInput.split(" ")) {
-            seeds.add(new Seed(Long.parseLong(seed)));
+            seeds.add(new Seed(Long.parseLong(seed), 0));
         }
         for (int i = 2; i < lines.size(); i++) {
             if (lines.get(i).startsWith("seed-to-soil map:")) {
@@ -113,6 +128,30 @@ public class Main {
 
         System.out.println("Seed ID: " + seedID + " has the lowest location: " + minimum);
 
-    }
 
+        //// TESTING
+        System.out.println();
+        String[] seedsRanges = seedsInput.split(" ");
+        long seedIDWithLowestLocation = 0;
+        long lowestLocation = Long.MAX_VALUE;
+        for (int i = 0; i < seedsRanges.length; i += 2) {
+            for (long j = 0; j < Long.parseLong(seedsRanges[i + 1]); j++) {
+                long currentSeed = Long.parseLong(seedsRanges[i]) + j;
+                long soil = findMapping2(currentSeed, seedToSoilMapInput.toArray(new String[0]));
+                long fertilizer = findMapping2(soil, soilToFertilizerMapInput.toArray(new String[0]));
+                long water = findMapping2(fertilizer, fertilizerToWaterMapInput.toArray(new String[0]));
+                long light = findMapping2(water, waterToLightMapInput.toArray(new String[0]));
+                long temperature = findMapping2(light, lightToTemperatureMapInput.toArray(new String[0]));
+                long humidity = findMapping2(temperature, temperatureToHumidityMapInput.toArray(new String[0]));
+                long location = findMapping2(humidity, humidityToLocationMapInput.toArray(new String[0]));
+                if (location < lowestLocation) {
+                    lowestLocation = location;
+                    seedIDWithLowestLocation = currentSeed;
+                }
+            }
+        }
+        System.out.println("Seed ID: " + seedIDWithLowestLocation + " has the lowest location: " + lowestLocation);
+        //// TESTING
+
+    }
 }
